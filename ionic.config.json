@@ -1,0 +1,7 @@
+{
+  "name": "scanbot-sdk-example-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Bank Check Scan & Process APP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div padding>
+    <ion-list>
+      <ion-list-header>
+        <ion-label text-uppercase>Cheque Scanner</ion-label>
+      </ion-list-header>
+      <ion-item (click)="startDocumentScanner()">
+        <ion-label>Scan Bank Check</ion-label>
+      </ion-item>
+      <ion-item (click)="pickImageFromPhotoLibrary()">
+        <ion-label>Import Check Image & Detect it</ion-label>
+      </ion-item>
+      <ion-item (click)="gotoImageResults()" detail>
+        <ion-label>View Check's Images </ion-label>
+      </ion-item>
+      <ion-item (click)="request()" detail>
+        <ion-label>Test </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>
+<ion-footer>
+  <div class="copyright-label">
+    WEVIOO
+  </div>
+</ion-footer>

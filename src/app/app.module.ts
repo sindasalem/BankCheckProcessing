@@ -1,0 +1,32 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
+
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DialogsService } from './services/dialogs.service';
+import { ScanbotSdkDemoService } from './services/scanbot-sdk-demo.service';
+import { ImageResultsRepository } from './services/image-results.repository';
+import { Base64 } from '@ionic-native/base64/ngx';
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [HttpClientModule,BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  providers: [
+    Base64,
+    StatusBar,
+    SplashScreen,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    DialogsService,
+    ScanbotSdkDemoService,
+    ImageResultsRepository,
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
