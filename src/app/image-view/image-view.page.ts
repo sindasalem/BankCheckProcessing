@@ -130,8 +130,8 @@ export class ImageViewPage implements OnInit {
             message: 'Please wait...',
           });
            (await loading).present();
-        //let  url = 'http://10.0.2.2:5000/upload';
-        let  url = 'http://192.168.23.57:5000/upload';
+        let  url = 'http://10.0.2.2:5000/upload';
+        //let  url = 'http://192.168.23.57:5000/upload';
         const date = new Date().valueOf();
       
         // Replace extension according to your media type
@@ -153,6 +153,7 @@ export class ImageViewPage implements OnInit {
             .subscribe(async data => {
                 console.log(data);
                 this.dataTransferService.sharingValue = data;
+                this.dataTransferService.sharingImage = this.page;
                 (await loading).dismiss();
                 this.router.navigate(['/check-details'])
                 }, async error => {

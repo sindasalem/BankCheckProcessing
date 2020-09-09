@@ -992,7 +992,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\User\Desktop\scanbot-sdk-example-ionic-master\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\User\Desktop\bankcheque-front\src\main.ts */"./src/main.ts");
 
 
 /***/ })

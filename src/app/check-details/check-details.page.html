@@ -11,41 +11,68 @@
 <ion-content>
   <ion-card>
 
-    <img src="assets/img/cheque1.png"/>
+    <img [src]='image.sanitizedDocumentPreviewImage'/>
 
     <ion-item>
       <div>
       <h2>RIB</h2>
       <br>
-      <p>{{myData.rib}}</p>
+      <div *ngIf="myData.rib"><p>{{myData.rib}}</p></div>
+      <div *ngIf="!myData.rib"><p>Not recognized</p></div>
     </div>
     </ion-item>
     <ion-item>
       <div>
       <h2>Numéro de Cheque</h2>
       <br>
-      <p>{{myData.num}}</p>
+      <div *ngIf="myData.num_cheque"><p>{{myData.num_cheque}}</p></div>
+      <div *ngIf="!myData.num_cheque"><p>Not recognized</p></div>
     </div>
     </ion-item>
     <ion-item>
       <div>
-      <h2>Num de Compte </h2>
+      <h2>Numéro de Compte </h2>
       <br>
-      <p>6789123456</p>
+      <div *ngIf="myData.rib">
+      <p>{{myData.rib | slice:5:17}}</p>
+    </div>
+    <div *ngIf="!myData.rib"><p>Not recognized</p></div>
+      </div>
+    </ion-item>
+    <ion-item>
+      <div>
+      <h2>Titulaire</h2>
+      <br>
+      <div *ngIf="myData.client_data.Nom && myData.client_data.Prenom">
+        <p>{{myData.client_data.Nom}} {{myData.client_data.Prenom}}</p>
+      </div>
+      <div *ngIf="!(myData.client_data.Nom && myData.client_data.Prenom)">
+        <p>Unknwon</p>
+      </div>
       </div>
     </ion-item>
     <ion-item>
       <div>
       <h2>Banque</h2>
       <br>
-      <p> BIAT</p>
+      <div *ngIf="(myData.bank_data.Nom)">
+      <p>{{myData.bank_data.Nom}}</p>
+      </div>
+      <div *ngIf="!(myData.bank_data.Nom)">
+        <p>Unknwon</p>
+      </div>
     </div>
     </ion-item>
     <ion-item>
     <div>
       <h2>Agence</h2>
       <br>
-      <p> Menzah5 </p>
+      <div *ngIf="(myData.agence_data.Ville)">
+      <p>{{myData.agence_data.Ville}}</p>
+    </div>
+    <div *ngIf="!(myData.agence_data.Ville)">
+      <p>Unknwon</p>
+    </div>
     </div>
     </ion-item>
     

@@ -229,7 +229,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-titl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".copyright-label {\n  width: 100%;\n  text-align: center;\n  font-size: 0.60em;\n  color: #8c8c8c;\n  margin-bottom: 15px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFVzZXJcXERlc2t0b3BcXHNjYW5ib3Qtc2RrLWV4YW1wbGUtaW9uaWMtbWFzdGVyL3NyY1xcYXBwXFxob21lXFxob21lLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCxtQkFBbUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5jb3B5cmlnaHQtbGFiZWwge1xuICB3aWR0aDogMTAwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDAuNjBlbTtcbiAgY29sb3I6ICM4YzhjOGM7XG4gIG1hcmdpbi1ib3R0b206IDE1cHg7XG59XG4iXX0= */"
+module.exports = ".copyright-label {\n  width: 100%;\n  text-align: center;\n  font-size: 0.60em;\n  color: #8c8c8c;\n  margin-bottom: 15px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFVzZXJcXERlc2t0b3BcXGJhbmtjaGVxdWUtZnJvbnQvc3JjXFxhcHBcXGhvbWVcXGhvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsY0FBYztFQUNkLG1CQUFtQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLmNvcHlyaWdodC1sYWJlbCB7XG4gIHdpZHRoOiAxMDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMC42MGVtO1xuICBjb2xvcjogIzhjOGM4YztcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cbiJdfQ== */"
 
 /***/ }),
 

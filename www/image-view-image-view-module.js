@@ -256,7 +256,7 @@ var ImageViewPage = /** @class */ (function () {
                         return [4 /*yield*/, loading];
                     case 1:
                         (_a.sent()).present();
-                        url = 'http://192.168.23.57:5000/upload';
+                        url = 'http://10.0.2.2:5000/upload';
                         date = new Date().valueOf();
                         imageName = date + '.jpeg';
                         // call method that creates a blob from dataUri
@@ -277,6 +277,7 @@ var ImageViewPage = /** @class */ (function () {
                                         case 0:
                                             console.log(data);
                                             this.dataTransferService.sharingValue = data;
+                                            this.dataTransferService.sharingImage = this.page;
                                             return [4 /*yield*/, loading];
                                         case 1:
                                             (_a.sent()).dismiss();

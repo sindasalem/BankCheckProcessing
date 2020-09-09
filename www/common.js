@@ -430,6 +430,16 @@ var DataTransferService = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(DataTransferService.prototype, "sharingImage", {
+        get: function () {
+            return this.image;
+        },
+        set: function (obj) {
+            this.image = obj;
+        },
+        enumerable: true,
+        configurable: true
+    });
     DataTransferService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
